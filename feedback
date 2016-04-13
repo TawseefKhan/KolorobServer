@@ -1,0 +1,13 @@
+﻿CREATE TABLE kolorob.user_feedbackv2
+(
+  username character varying,
+  contactno integer,
+  issuetype character varying,
+  issuedetails character varying,
+  userid integer NOT NULL DEFAULT nextval('kolorob.user_feedbackv2_seq'::regclass),
+  nodeid character varying,
+  catiid integer,
+  feedback_time character varying,
+  userage character varying,
+  CONSTRAINT user_feedbackv2_pkey PRIMARY KEY (userid)
+)
